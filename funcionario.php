@@ -32,7 +32,7 @@
             ?>
         </select> </p>
 
-        <p> observações:</p> <textarea name="name" rows="4" cols="40"></textarea>
+        <p> Observações: <input type="text" name="obs"> </p>
         <p> <input type="submit" name="" value="Cadastra"> </p>
       </form>
     </fieldset>
