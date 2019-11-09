@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <?php
   require_once '../class/conexao.class.php';
   require_once '../class/valida.class.php';

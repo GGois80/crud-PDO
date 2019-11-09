@@ -1,3 +1,6 @@
+<?php
+  require_once 'menu.php';
+?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -22,7 +25,7 @@
           while ($array= $exe->fetch(PDO::FETCH_ASSOC)){
     				echo"<tr>
     					<form action='php/editar-set.php' method='post'>
-    						<td> <input type='text' name='nome' value='$array[nome]'/> </td>";
+    						<td> <input type='text' name='nome_setor' value='$array[nome]'/> </td>";
 
         echo"</td>
           <td> <input type='submit' value='OK'> </td>

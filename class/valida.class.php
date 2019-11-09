@@ -7,12 +7,20 @@ class Valida {
   private $cpf;
   private $obs;
   private $setor;
+  private $nome_setor;
 
   public function setNome($nome){
     $this->nome = $nome;
   }
   public function getNome(){
     return $this->nome;
+  }
+
+  public function setNome_setor($nome_setor){
+    $this->nome_setor = $nome_setor;
+  }
+  public function getNome_setor(){
+    return $this->nome_setor;
   }
 
   public function setSexo($sexo){
@@ -51,9 +59,14 @@ class Valida {
   }
 
     public function validaCPF() {
-
+      
     // Extrai somente os números
     $cpf = preg_replace( '/[^0-9]/is', '', $this->cpf );
+    $cpf = str_replace('.', '', $this->cpf);
+    $cpf = str_replace(',', '', $this->cpf);
+    $cpf = str_replace('-', '', $this->cpf);
+    $cpf = str_replace('/', '', $this->cpf);
+
 
     // Verifica se foi informado todos os digitos corretamente
     if (strlen($this->cpf) != 11) {
@@ -109,6 +122,11 @@ public function validaString(){
     }
   }
 
-
-
+  public function ValidaSetor(){
+    if(strlen($this->nome_setor)>30 || is_numeric($this->nome_setor) || empty($this->nome_setor)){
+      return false;
+    }else{
+      return true ;
+    }
+  }
 }

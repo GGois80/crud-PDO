@@ -1,7 +1,9 @@
 <?php
+	require_once 'menu.php';
 	require_once 'class/conexao.class.php';
   $conexao = new Conexao();
 ?>
+
 <html>
 	<head>
 		<meta charset="utf-8">

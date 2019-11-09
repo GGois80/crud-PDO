@@ -1,0 +1,11 @@
+.menu{padding: 50px 0; margin: -10px -10px 10px -10px; background: black;}
+
+.menu ul{width: 100%; text-align: center;}
+
+.menu li{display: inline-block; margin-right: 20px;}
+
+.centro{text-align: center; }
+
+.menu a{color: white; font-size: 25px;}
+
+

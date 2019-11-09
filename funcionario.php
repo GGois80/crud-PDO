@@ -1,3 +1,6 @@
+<?php
+  require_once 'menu.php';
+?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -33,7 +36,7 @@
         </select> </p>
 
         <p> Observações: <input type="text" name="obs"> </p>
-        <p> <input type="submit" name="" value="Cadastra"> </p>
+        <p> <input type="submit" name="" value="Cadastrar"> </p>
       </form>
     </fieldset>
   </body>

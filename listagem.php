@@ -1,6 +1,8 @@
 <?php
-    require_once 'class/conexao.class.php';
+	require_once 'class/conexao.class.php';
+	require_once 'menu.php';
 ?>
+
 
 <html>
 	<head>
